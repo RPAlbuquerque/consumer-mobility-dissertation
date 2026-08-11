@@ -1,1 +1,59 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
 
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.*
+secrets.*
+
+# Restricted or local empirical data
+**/data/private/
+**/data/raw/
+**/data/interim/
+**/data/processed/
+**/raw_exports/
+**/full_text_pdfs/
+
+# Geospatial and large analytical files
+*.gpkg
+*.gpkg.zip
+*.geojson
+*.parquet
+*.feather
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.tif
+*.tiff
+
+# Temporary analytical artifacts
+**/tmp/
+**/temp/
+**/.cache/
+*.joblib
+*.pkl
+
+# Internal working materials
+**/recovered_conversations/
+**/review_rounds/
+**/internal_audits/
