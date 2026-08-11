@@ -40,3 +40,28 @@ chapter_2_paper_1/
 ├── coding_framework/
 ├── included_studies/
 └── scripts/
+```
+
+| Directory | Contents |
+|---|---|
+| `search_strategy/` | Complete Scopus and Web of Science queries and the search log. |
+| `screening_documentation/` | Eligibility criteria, screening protocol, PRISMA-informed counts, and aggregate exclusion categories. |
+| `coding_framework/` | Analytical categories used to compare the studies and develop the exposure-conversion synthesis. |
+| `included_studies/` | Final matrix of the 86 studies, their synthesis domains, and their contributions to the framework. |
+| `scripts/` | Validation code for checking record counts, required fields, duplicates, and consistency across the public review files. |
+
+## Public documentation and access limits
+
+The repository provides an auditable record of the search logic, eligibility decisions, aggregate screening results, coding structure, and final included-study corpus. It does not redistribute raw Scopus or Web of Science exports, database-supplied abstracts, or copyrighted article files. These exclusions reflect database licensing and copyright restrictions rather than missing stages in the documented review process.
+
+The public files support methodological transparency and verification of the reported corpus, while the interpretation and theoretical integration of the evidence remain in Chapter 2 of the dissertation.
+
+## Related dissertation materials
+
+- The dissertation-level argument and repository map are available in the [root README](../README.md).
+- The empirical conversion study is documented in [`chapter_3_paper_2/`](../chapter_3_paper_2/).
+- The pre-outcome mobility-based market infrastructure study is documented in [`chapter_4_paper_3/`](../chapter_4_paper_3/).
+
+## Citation
+
+Please cite the dissertation and Chapter 2 when using the review protocol, included-study matrix, or exposure-conversion synthesis. Complete bibliographic information will be added after the dissertation is deposited in the UFRGS institutional repository.
