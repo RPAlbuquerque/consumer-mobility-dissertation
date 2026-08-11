@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1377" height="887" viewBox="0 0 1377 887" role="img" aria-labelledby="title desc">
+  <title id="title">Fitted associations between visit volume and VIIRS nighttime light intensity</title>
+  <desc id="desc">The original regime-specific fitted curves from the Paper 3 notebook, relabeled to identify mobility-based access regimes and to preserve their descriptive interpretation.</desc>
+
+  <rect x="0" y="0" width="1377" height="887" fill="#FFFFFF"/>
+  <image href="paper3_figure9_original_notebook.png" x="0" y="0" width="1377" height="887"/>
+
+  <!-- Replace the original title without changing the plot or curves. -->
+  <rect x="280" y="0" width="830" height="41" fill="#FFFFFF"/>
+  <text x="688.5" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#262626">Fitted Associations Between Visit Volume and VIIRS Nighttime Light Intensity</text>
+
+  <!-- Replace the legend title while retaining the original legend entries. -->
+  <rect x="118" y="56" width="258" height="31" fill="#FFFFFF"/>
+  <text x="126" y="79" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#262626">Mobility-based access regime</text>
+
+  <!-- Replace the vertical-axis label. -->
+  <rect x="0" y="205" width="41" height="430" fill="#FFFFFF"/>
+  <text transform="translate(27 620) rotate(-90)" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#262626">Fitted VIIRS nighttime light intensity</text>
+
+  <!-- Name the observed predictor directly. -->
+  <rect x="390" y="844" width="610" height="43" fill="#FFFFFF"/>
+  <text x="688.5" y="875" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#262626">Standardized log visit volume</text>
+</svg>

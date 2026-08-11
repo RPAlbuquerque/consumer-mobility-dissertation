@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1360" viewBox="0 0 2400 1360" role="img" aria-labelledby="title desc">
+  <title id="title">Empirical workflow for evaluating mobility-based access conditions across spatial scales</title>
+  <desc id="desc">Mobility and VIIRS inputs feed a national analytical workflow and two downstream diagnostic branches: MII alignment and spatial dependence, localized mobility structure, mobility-based access regimes, external differentiation, and reconstruction in the Sao Paulo metropolitan window.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="22" markerHeight="22" refX="18" refY="11" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#455B6B"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="22" markerHeight="22" refX="18" refY="11" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#4D7558"/>
+    </marker>
+    <style>
+      .font { font-family: Arial, Helvetica, sans-serif; fill: #17232D; }
+      .band-label { font-size: 30px; font-weight: 700; letter-spacing: 2.2px; fill: #566674; }
+      .node-title { font-size: 44px; font-weight: 700; }
+      .node-title-small { font-size: 42px; font-weight: 700; }
+      .body { font-size: 38px; font-weight: 400; }
+      .small { font-size: 30px; font-weight: 400; fill: #465866; }
+      .tag { font-size: 27px; font-weight: 700; letter-spacing: 1.2px; }
+      .tag-white { font-size: 27px; font-weight: 700; letter-spacing: 1.2px; fill: #FFFFFF; }
+      .tag-blue { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; letter-spacing: 1.2px; fill: #315F7C; }
+      .tag-green { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; letter-spacing: 1.2px; fill: #4D7558; }
+      .number { font-size: 32px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+      .flow { fill: none; stroke: #455B6B; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .flow-green { fill: none; stroke: #4D7558; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowGreen); }
+      .robustness { fill: none; stroke: #7C6848; stroke-width: 5; stroke-dasharray: 12 10; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="2400" height="1360" fill="#FFFFFF"/>
+
+  <!-- Structural bands -->
+  <rect x="42" y="72" width="470" height="1215" rx="14" fill="#F7F9FA" stroke="#CDD6DC" stroke-width="3"/>
+  <rect x="560" y="72" width="1798" height="650" rx="14" fill="#FAFBFC" stroke="#CDD6DC" stroke-width="3"/>
+  <rect x="560" y="770" width="1798" height="517" rx="14" fill="#FAFBFC" stroke="#CDD6DC" stroke-width="3"/>
+
+  <text class="font band-label" x="88" y="132">SHARED INPUTS</text>
+  <text class="font band-label" x="610" y="132">NATIONAL MOBILITY STRUCTURE</text>
+  <text class="font band-label" x="610" y="830">EXTERNAL AND MULTISCALE DIAGNOSTICS</text>
+
+  <!-- Input: mobility -->
+  <rect x="88" y="184" width="378" height="332" rx="12" fill="#EAF2F8" stroke="#315F7C" stroke-width="4"/>
+  <text class="tag-blue" x="116" y="241">MOBILITY INPUT</text>
+  <text class="font node-title-small" x="116" y="306">Tract-level data</text>
+  <text class="font body" x="116" y="365" style="font-size:34px">
+    <tspan x="116" dy="0">387,779 tracts</tspan>
+    <tspan x="116" dy="51">7 mobility indicators</tspan>
+    <tspan x="116" dy="51">MII + normalized MII</tspan>
+  </text>
+
+  <!-- Input: VIIRS -->
+  <rect x="88" y="831" width="378" height="340" rx="12" fill="#EAF4EC" stroke="#4D7558" stroke-width="4"/>
+  <text class="tag-green" x="116" y="888">VIIRS INPUT</text>
+  <text class="font node-title-small" x="116" y="950">Nighttime lights</text>
+  <text class="font body" x="116" y="1034" style="font-size:34px">
+    <tspan x="116" dy="0">Annual raster (2024)</tspan>
+    <tspan x="116" dy="51">External context</tspan>
+    <tspan x="116" dy="51">Allocation surface</tspan>
+  </text>
+
+  <!-- Stage 1 -->
+  <rect x="612" y="184" width="492" height="390" rx="12" fill="#E8F3F2" stroke="#2E7073" stroke-width="4"/>
+  <circle cx="658" cy="232" r="31" fill="#2E7073"/>
+  <text class="font number" x="658" y="233">1</text>
+  <text class="font node-title-small" x="706" y="220" style="font-size:40px">
+    <tspan x="706" dy="0">MII alignment</tspan>
+    <tspan x="706" dy="50">Spatial dependence</tspan>
+  </text>
+  <text class="font body" x="648" y="340">
+    <tspan x="648" dy="0">Equal-weight MII</tspan>
+    <tspan x="648" dy="53">Global PCA alignment</tspan>
+    <tspan x="648" dy="53">KNN Moran's I (k = 8)</tspan>
+  </text>
+  <line x1="648" y1="500" x2="1068" y2="500" stroke="#A7C2C2" stroke-width="3"/>
+  <text class="font small" x="648" y="543">Covariance-alignment check</text>
+
+  <!-- Stage 2 -->
+  <rect x="1214" y="184" width="492" height="390" rx="12" fill="#F7F1E5" stroke="#876A3F" stroke-width="4"/>
+  <circle cx="1260" cy="232" r="31" fill="#876A3F"/>
+  <text class="font number" x="1260" y="233">2</text>
+  <text class="font node-title-small" x="1308" y="220">
+    <tspan x="1308" dy="0">Localized mobility</tspan>
+    <tspan x="1308" dy="50">structure</tspan>
+  </text>
+  <text class="font body" x="1250" y="340">
+    <tspan x="1250" dy="0">7,398 focal tracts</tspan>
+    <tspan x="1250" dy="53">Local PCA (k = 200)</tspan>
+    <tspan x="1250" dy="53">PC scores + variance</tspan>
+  </text>
+  <line x1="1250" y1="500" x2="1670" y2="500" stroke="#D7C7AA" stroke-width="3"/>
+  <text class="font small" x="1250" y="543">Local covariance structure</text>
+
+  <!-- Robustness strip -->
+  <path class="robustness" d="M1460,575 L1460,602"/>
+  <rect x="1214" y="602" width="492" height="82" rx="10" fill="#FFFDFC" stroke="#A58B61" stroke-width="3" stroke-dasharray="11 8"/>
+  <text class="font tag" x="1244" y="636" fill="#765F3D">ROBUSTNESS</text>
+  <text class="font small" x="1244" y="670">GWPCA  |  k = 100, 300</text>
+
+  <!-- Stage 3 -->
+  <rect x="1816" y="184" width="492" height="390" rx="12" fill="#F3EFE9" stroke="#7D6850" stroke-width="4"/>
+  <circle cx="1862" cy="232" r="31" fill="#7D6850"/>
+  <text class="font number" x="1862" y="233">3</text>
+  <text class="font node-title-small" x="1910" y="220" style="font-size:39px">
+    <tspan x="1910" dy="0">Mobility-based</tspan>
+    <tspan x="1910" dy="50">access regimes</tspan>
+  </text>
+  <text class="font body" x="1852" y="340">
+    <tspan x="1852" dy="0">k-means; 4 regimes</tspan>
+    <tspan x="1852" dy="53">20 starts; seed = 42</tspan>
+    <tspan x="1852" dy="53">Nearest-focal assignment</tspan>
+  </text>
+  <line x1="1852" y1="500" x2="2272" y2="500" stroke="#D0C4B7" stroke-width="3"/>
+  <text class="font small" x="1852" y="529" style="font-size:25px">
+    <tspan x="1852" dy="0">Exploratory configurations</tspan>
+    <tspan x="1852" dy="31">Not rankings</tspan>
+  </text>
+
+  <!-- Stage 5: reconstruction -->
+  <rect x="612" y="874" width="760" height="346" rx="12" fill="#F7ECE8" stroke="#955D48" stroke-width="4"/>
+  <circle cx="658" cy="922" r="31" fill="#955D48"/>
+  <text class="font number" x="658" y="923" style="font-size:25px">4A</text>
+  <text class="font node-title" x="706" y="917" style="font-size:39px">
+    <tspan x="706" dy="0">S&#227;o Paulo metropolitan-window</tspan>
+    <tspan x="706" dy="47">reconstruction</tspan>
+  </text>
+  <text class="font body" x="648" y="1030">
+    <tspan x="648" dy="0">52,621 tracts; 100 m grid</tspan>
+    <tspan x="648" dy="53">VIIRS-guided weights</tspan>
+    <tspan x="648" dy="53" style="font-size:34px">Sum preservation; allocation dispersion</tspan>
+  </text>
+  <line x1="648" y1="1167" x2="1336" y2="1167" stroke="#D9BEB5" stroke-width="3"/>
+  <text class="font small" x="648" y="1204">Model-based; not observed 100 m MII</text>
+
+  <!-- Stage 4: external differentiation -->
+  <rect x="1494" y="874" width="814" height="346" rx="12" fill="#EAF4EC" stroke="#4D7558" stroke-width="4"/>
+  <circle cx="1540" cy="922" r="31" fill="#4D7558"/>
+  <text class="font number" x="1540" y="923" style="font-size:25px">4B</text>
+  <text class="font node-title" x="1588" y="935">External differentiation</text>
+  <text class="font body" x="1530" y="1012">
+    <tspan x="1530" dy="0">VIIRS means by regime</tspan>
+    <tspan x="1530" dy="53">Regime-specific splines</tspan>
+    <tspan x="1530" dy="53">Held-out comparison vs. visits</tspan>
+  </text>
+  <line x1="1530" y1="1167" x2="2272" y2="1167" stroke="#B9D0BE" stroke-width="3"/>
+  <text class="font small" x="1530" y="1204">Proxy context; not performance validation</text>
+
+  <!-- Main analytical flow -->
+  <path class="flow" d="M466,350 L612,350"/>
+  <path class="flow" d="M1104,350 L1214,350"/>
+  <path class="flow" d="M1706,350 L1816,350"/>
+  <path class="flow" d="M2062,574 L2062,874"/>
+
+  <!-- Branch to multiscale reconstruction -->
+  <path class="flow" d="M858,574 L858,874"/>
+
+  <!-- VIIRS dual-role flow -->
+  <path class="flow-green" d="M466,956 C535,956 548,1045 612,1045"/>
+  <path class="flow-green" d="M277,1171 L277,1248 C610,1266 1160,1266 1640,1266 C1810,1266 1900,1252 1900,1220"/>
+
+</svg>
