@@ -10,7 +10,7 @@ The screening unit was the unique bibliographic record remaining after deduplica
 
 ## Screening information
 
-Titles, abstracts, and author or index keywords were examined to determine whether each record helped answer the research question.
+We first examined titles, abstracts, and author or index keywords to determine whether each record met the initial eligibility criteria. We then retrieved and read the full texts of the 86 retained articles before completing the coding and integrative synthesis.
 
 ## Decision logic
 
