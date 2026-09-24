@@ -2,7 +2,9 @@
 
 ## Review databases and date
 
-Scopus and Web of Science were searched on May 15, 2026. The searches combined three concept blocks: mobility and location traces; consumer, marketing, or commercial contexts; and exposure, opportunity, conversion, or performance outcomes.
+Scopus and Web of Science were searched on May 15, 2026. The searches combined three concept blocks: mobility and location traces; consumer, marketing, or commercial contexts; and terms broad enough to retrieve evidence on exposure, opportunity, conversion, sales, performance, spending, and place-based heterogeneity.
+
+The Boolean expressions documented in `scopus_query.md` and `wos_query.md` reproduce the search syntax used in each database. Terms within each block were combined with `OR`, and the three blocks were combined with `AND`.
 
 ## Identification and export counts
 
@@ -25,7 +27,7 @@ The two exports were merged into one bibliographic database. Duplicate records w
 
 ## Screening outcome
 
-Titles, abstracts, and keywords were screened against the eligibility criteria documented in `../screening_documentation/`.
+The 599 unique records were screened against the eligibility criteria documented in `../screening_documentation/`.
 
 | Decision | Records |
 |---|---:|
@@ -33,5 +35,6 @@ Titles, abstracts, and keywords were screened against the eligibility criteria d
 | Excluded after screening | 513 |
 | Total screened | 599 |
 
+The 86 retained articles formed the final corpus for coding and integrative synthesis.
+
 Raw commercial database exports are not redistributed through this repository.
-The full texts of the 86 retained articles were subsequently reviewed and coded for the integrative synthesis.
