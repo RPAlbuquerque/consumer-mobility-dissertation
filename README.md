@@ -1,31 +1,35 @@
 # Consumer Mobility Dissertation
 
-**Research materials for a three-paper PhD dissertation on consumer mobility, market exposure, local conversion conditions, and localized market performance.**
+**Research materials for a three-paper PhD dissertation on consumer mobility, market exposure, local conversion conditions, local sales, and pre-outcome access diagnosis.**
 
 This repository contains the code, documentation, data dictionaries, and non-restricted supporting materials associated with Rafael Pereira Albuquerque's PhD dissertation in Marketing at the Federal University of Rio Grande do Sul (UFRGS), Brazil.
 
 ## Dissertation overview
 
-Firms can increasingly observe where consumers move, but movement alone does not show whether consumers encounter a market opportunity or whether that exposure becomes a local outcome. The dissertation addresses this problem by separating consumer mobility, market exposure, localized market opportunity, and market performance, while examining the place-based conditions that connect these stages.
+Firms and researchers may observe where consumers move, visit, and interact with places before they know whether a focal offering can generate local sales. Movement alone does not establish whether consumers encounter a relevant offering, whether that potential contact is commercially viable, or whether it is reflected in a realized market outcome.
+
+The dissertation addresses this marketing problem by distinguishing consumer mobility, market exposure, localized market opportunity, local conversion conditions, and local sales. Its central argument is that mobility may create potential contact with an offering, but potential contact becomes commercially meaningful only under local conditions that support commercial viability and, in some cases, local sales.
 
 > **General research question:** How can digital, spatial, and mobility-related evidence help explain and diagnose the conditions under which consumer exposure may become localized market opportunity and market performance across places?
 
-The dissertation aims to explain how these forms of evidence help firms and researchers understand this process while preserving what each data source actually observes. Its central argument is that mobility creates the possibility of market exposure, local conversion conditions are associated with whether that exposure becomes opportunity and performance, and recurrent access can be examined before direct outcomes are available.
+The dissertation preserves what each form of evidence can observe. Mobility records show movement and access; place-based digital sentiment describes information surrounding local markets; and sales data capture realized commercial outcomes. These sources do not represent the same event and are not interpreted as interchangeable indicators.
 
 ```mermaid
 flowchart LR
-    A["Consumer mobility"] --> B["Market exposure"]
-    B --> C["Local conversion conditions"]
-    C --> D["Localized market opportunity and performance"]
-    E["Mobility-based market infrastructure"] --> B
-    F["Place-based digital sentiment"] --> C
+    A["Consumer mobility"] -->|"Potential contact"| B["Market exposure"]
+    B -->|"Commercial viability"| C["Localized market opportunity"]
+    C -->|"Realized local sales"| D["Local sales"]
+    E["Local conversion conditions"] -.-> C
+    E -.-> D
+    F["Place-based digital sentiment"] --> E
+    G["Mobility-based market infrastructure"] --> H["Pre-outcome access diagnosis"]
 ```
 
 The three papers perform different theoretical and empirical roles within this argument:
 
 | Chapter | Study | Role in the dissertation | Public materials |
 |---|---|---|---|
-| **Chapter 2 / Paper 1** | *Consumer Mobility and Localized Market Performance: A Systematic Review with an Integrative Synthesis of Market Exposure and Conversion* | Develops the exposure-conversion framework through a systematic review and integrative synthesis of 86 journal articles. | Search strategies, eligibility criteria, screening documentation, coding framework, PRISMA counts, and included-study matrix. |
+| **Chapter 2 / Paper 1** | *When Does Consumer Mobility Relate to Local Sales? A Systematic-Integrative Review and Conditional Mobility–Sales Framework* | Synthesizes 86 journal articles to explain under what local conditions observed consumer mobility relates to local sales. Develops the conditional mobility–sales framework by distinguishing mobility, exposure, opportunity, local conversion conditions, and local sales. | Search strategies, eligibility criteria, screening documentation, coding framework, PRISMA counts, and included-study matrix. |
 | **Chapter 3 / Paper 2** | *From Consumer Mobility to Localized Sales Performance: Place-Based Digital Sentiment and the Local Market Conversion Gap* | Examines why comparable consumer mobility is associated with different localized sales performance across 726 urban census tracts. | GEWI construction code, mobility preprocessing, spatial-analysis code, diagnostics, and data dictionaries. |
 | **Chapter 4 / Paper 3** | *Consumer Mobility and the Spatial Organization of Local Market Access* | Examines mobility-based market infrastructure as a pre-outcome access dimension across 387,779 Brazilian census tracts. | Analytical notebook, parameters, environment specification, data documentation, and non-restricted supporting outputs. |
 
