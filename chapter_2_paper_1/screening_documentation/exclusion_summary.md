@@ -4,7 +4,7 @@
 |---|---|---:|
 | `R1` | No relevant mobility or place construct | 83 |
 | `R2` | No market, consumer, commercial, service, or local-market construct | 11 |
-| `R3` | No sufficient exposure, opportunity, performance, or local-conversion connection | 346 |
+| `R3` | No sufficient exposure, opportunity, local-conversion, or local-sales connection | 346 |
 | `R4` | Out-of-scope adjacent issue or insufficient transferability | 73 |
 | **Total** |  | **513** |
 
