@@ -1,6 +1,6 @@
 # Repository Manifest
 
-This manifest identifies the public research materials associated with each empirical chapter of the dissertation and distinguishes analytical transparency from complete data-dependent reproduction.
+This manifest identifies the public research materials associated with each chapter of the dissertation and distinguishes analytical transparency from complete data-dependent reproduction.
 
 ## Access categories
 
@@ -12,7 +12,7 @@ This manifest identifies the public research materials associated with each empi
 
 | Dissertation component | Public materials | Materials not redistributed | Reproduction status |
 |---|---|---|---|
-| **Chapter 2 / Paper 1** | Search strings, search log, eligibility criteria, screening protocol, PRISMA-informed counts, aggregate exclusion summary, coding framework, included-study matrix, and validation script. | Commercial Scopus and Web of Science exports, database-supplied abstracts, and copyrighted article files. | Public methodological documentation and auditable final corpus. |
+| **Chapter 2 / Paper 1** | Search strings, search log, eligibility criteria, screening protocol, PRISMA-informed counts, aggregate exclusion summary, coding framework, included-study matrix, and validation script. | Commercial Scopus and Web of Science exports and copyrighted article files. | Public methodological documentation and auditable final corpus. |
 | **Chapter 3 / Paper 2** | Mobility-preprocessing notebook, GEWI-construction notebook, empirical-analysis notebook, data dictionaries, data-access documentation, and environment specification. | Proprietary aggregated mobility data, restricted geolocated digital-discourse records, localized transaction data, and restricted derived analytical files. | Conditional reproduction with authorized data access. |
 | **Chapter 4 / Paper 3** | Analytical notebook, MII and mobility-variable documentation, VIIRS documentation, parameters, environment specification, data-access documentation, and selected non-restricted outputs. | Proprietary tract-level mobility input, restricted provider files, and derived files whose redistribution is not authorized. | Conditional reproduction with authorized mobility-data access; VIIRS is publicly obtainable from its official provider. |
 
@@ -22,8 +22,8 @@ This manifest identifies the public research materials associated with each empi
 |---|---|
 | `chapter_2_paper_1/search_strategy/` | Documents database queries, search fields, filters, dates, and exported record counts. |
 | `chapter_2_paper_1/screening_documentation/` | Documents eligibility rules, screening procedures, PRISMA-informed counts, and aggregate exclusions. |
-| `chapter_2_paper_1/coding_framework/` | Defines the categories used in the integrative synthesis. |
-| `chapter_2_paper_1/included_studies/` | Identifies the 86 studies and their contributions to the exposure-conversion synthesis. |
+| `chapter_2_paper_1/coding_framework/` | Defines the analytical roles used in the conditional mobility–sales framework. |
+| `chapter_2_paper_1/included_studies/` | Identifies the 86 studies and their contributions to the conditional mobility–sales synthesis. |
 | `chapter_3_paper_2/notebooks/` | Documents mobility preprocessing, GEWI construction, spatial specifications, and diagnostics. |
 | `chapter_3_paper_2/data_dictionary/` | Defines the aggregated mobility, GEWI, and localized sales-performance fields. |
 | `chapter_4_paper_3/notebooks/` | Documents the mobility-based market infrastructure workflow. |
