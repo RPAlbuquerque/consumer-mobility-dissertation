@@ -34,25 +34,26 @@ The study combines a systematic literature review with an integrative synthesis.
 
 The retained studies were organized according to the form of evidence observed, its operationalization and data source, spatial unit, focal outcome, and local conversion conditions. This coding distinguished what each study observed from what it could establish about local sales and allowed heterogeneous evidence to be compared within the conditional mobility–sales framework.
 
-## Directory contents
+| Directory | Contents |
+|---|---|
+| `search_strategy/` | Complete Scopus and Web of Science queries and the search log. |
+| `screening_documentation/` | Eligibility criteria, screening protocol, PRISMA-informed counts, and aggregate exclusion categories. |
+| `coding_framework/` | Analytical categories used to compare heterogeneous studies and develop the conditional mobility–sales framework. |
+| `included_studies/` | Final matrix of the 86 studies, their synthesis domains, and their contributions to the conditional mobility–sales synthesis. |
+| `scripts/` | Validation code for checking record counts, required fields, duplicates, and consistency across the public review files. |
 
-```text
-chapter_2_paper_1/
-├── README.md
-├── search_strategy/
-│   ├── scopus_query.md
-│   ├── wos_query.md
-│   └── search_log.md
-├── screening_documentation/
-│   ├── inclusion_criteria.md
-│   ├── exclusion_criteria.md
-│   ├── screening_protocol.md
-│   ├── prisma_counts.md
-│   └── exclusion_summary.md
-├── coding_framework/
-│   └── coding_framework.md
-├── included_studies/
-│   ├── included_studies.csv
-│   └── included_studies.tsv
-└── scripts/
-    └── validate_review_materials.py
+## Public documentation
+
+The repository provides an auditable record of the search logic, eligibility decisions, aggregate screening results, coding structure, and final included-study corpus. It does not redistribute commercial database exports or copyrighted article files.
+
+The public files support methodological transparency and verification of the reported corpus. The interpretation and theoretical integration of the evidence remain in Chapter 2 of the dissertation.
+
+## Related dissertation materials
+
+- The dissertation-level argument and repository map are available in the [root README](../README.md).
+- The empirical study of local conversion is documented in [`chapter_3_paper_2/`](../chapter_3_paper_2/).
+- The pre-outcome study of mobility-based market infrastructure is documented in [`chapter_4_paper_3/`](../chapter_4_paper_3/).
+
+## Citation
+
+Please cite the dissertation and Chapter 2 when using the review protocol, included-study matrix, or conditional mobility–sales synthesis. Complete bibliographic information will be added after the dissertation is deposited in the UFRGS institutional repository.
