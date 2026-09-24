@@ -12,7 +12,7 @@ EXPECTED_COLUMNS = {
     "Article Title",
     "Journal",
     "Primary Synthesis Domain",
-    "Contributions to the Exposure–Conversion Synthesis",
+    "Contributions to the Conditional Mobility–Sales Synthesis",
 }
 
 
