@@ -1,15 +1,13 @@
 # Selected Public Outputs
 
-This directory contains selected non-restricted figures from Chapter 4. The figure numbers follow the dissertation-wide numbering, so omitted numbers refer to figures located in other chapters or to outputs not selected for redistribution here.
+This directory contains selected non-restricted figures from Chapter 4 of the dissertation, *Consumer Mobility and the Spatial Organization of Local Market Access*. Figure numbers follow the dissertation-wide sequence; figures not included here remain available in the dissertation but were not selected for separate redistribution.
 
 ## Included files
 
-- `figure_06_empirical_workflow.png` and `.svg`: analytical workflow linking the retained MII, localized mobility structure, exploratory access regimes, VIIRS comparison, and São Paulo allocation.
-- `figure_08_national_mobility_based_access_regimes.png`: national map of the four exploratory mobility-based access regimes. The labels organize configurations and do not rank market quality or performance.
-- `figure_09_regime_specific_viirs_profiles.png` and `.svg`: descriptive regime-specific spline profiles relating standardized log visit volume to predicted VIIRS nighttime-light intensity within observed support.
+- `figure_04_empirical_workflow.png` and `.svg`: empirical workflow used to construct and assess the Mobility-based Market Access Index (MMAI), estimate localized mobility signatures and exploratory access regimes, compare those regimes with nighttime-light intensity, and apply aggregate-preserving spatial downscaling in the São Paulo metropolitan window.
+- `figure_06_national_mobility_based_access_regimes.png`: national distribution of the four exploratory mobility-based access regimes derived from localized covariance structures. The regimes distinguish spatial configurations of the mobility indicators and do not rank market quality, demand, sales, profitability, or investment potential.
+- `figure_07_regime_specific_viirs_profiles.png` and `.svg`: regime-specific fitted associations between standardized log visit volume and VIIRS nighttime-light intensity. These spline profiles are descriptive, apply only within the observed mobility support of each regime, and do not establish that any regime produces greater economic activity or market performance.
 
-The approved static map in Figure 8 retains the original code-facing label "Infrastructure Regime." Throughout the dissertation and repository documentation, these exploratory groups are interpreted more precisely as mobility-based access regimes.
+The figures report aggregate or model-derived evidence and contain no individual trajectories, device histories, or personally identifiable information. VIIRS nighttime-light intensity provides partial external context for local economic activity, but it does not measure daytime activity, demand, sales, conversion, profitability, or market performance.
 
-These figures present aggregate or model-derived results and do not contain individual trajectories, device histories, personal identifiers, or redistributable tract-level mobility records. VIIRS is used as bounded contextual evidence rather than as sales, demand, conversion, or market performance.
-
-The notebook generates additional intermediate diagnostics when the required local inputs are available. They are not stored here because the public package is intended to document the chapter's principal workflow and reported evidence without duplicating every notebook artifact.
+The public notebook generates additional diagnostics when the required local inputs are available. These intermediate outputs are not stored in this directory because the public package focuses on the chapter’s principal workflow and reported evidence.
