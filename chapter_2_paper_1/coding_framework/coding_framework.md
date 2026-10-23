@@ -1,67 +1,97 @@
-# Coding Framework for the Conditional Mobility–Sales Synthesis
+# Coding Framework for the Systematic-Integrative Synthesis
 
 ## Purpose
 
-The coding framework organized heterogeneous studies around the review question:
+This coding framework organized the retained literature around the review question:
 
-> Under what local conditions does observed consumer mobility relate to local sales?
+> What does existing research establish about the relationship between observed consumer mobility and local sales, and how do market settings, measures, and study designs shape what can be concluded?
 
-It distinguished constructs, operationalizations, data sources, spatial units, analytical relationships, explanatory conditions, and outcomes. This discipline prevented the synthesis from treating consumer mobility, market exposure, localized market opportunity, local conversion conditions, and local sales as interchangeable terms or as observed stages of one universal causal process.
+The framework was designed to preserve differences across the consumers represented, the process generating the observed movement, the commercial outcome, the market and period covered, and the research design. These differences determine what each study can establish and prevent heterogeneous findings from being interpreted as estimates of the same mobility-sales relationship.
 
 ## Core analytical logic
 
+The synthesis compared studies through three linked forms of evidence:
+
 ```text
-Consumer mobility
-        │ can create potential contact
-        ▼
-Market exposure ───────────── may be reflected in ─────────────► Local sales
+Observed consumer movement
         │
-        │ informs an assessment of commercial viability
+        │  Who was observed, and what generated the movement?
         ▼
-Localized market opportunity
+Commercial outcome
+        │
+        │  What was measured, and where was the outcome recorded?
+        ▼
+Supported conclusion
+        │
+        │  What does the research design establish within
+        │  the observed market, geographic unit, and period?
+        ▼
+Inferential boundary
 ```
 
-Localized market opportunity is an assessment of whether a focal offering can satisfy buyer need profitably in a defined local market. It is not an observed intermediate stage between market exposure and local sales.
+Observed mobility can show that consumers reached, entered, moved within, or returned to a place, depending on the measure used. A commercial outcome may record purchasing, spending, sales, revenue, or profit for a particular firm, channel, place, or period. The connection between these forms of evidence depends on whether the study describes an association, predicts an outcome, examines a specific action, or observes change after consumers and firms have had time to adjust.
 
-Local conversion conditions qualify the interpretation of potential contact, commercial viability, and the relationship between market exposure and local sales. They do not constitute another outcome or a universal stage through which all consumers, firms, or places necessarily pass.
+The framework does not treat observed mobility as purchasing, focal-firm sales as market-wide growth, or a predictive relationship as the effect of changing mobility. It also keeps localized market opportunity outside the observed mobility-sales relationship because assessing such an opportunity requires additional evidence about buyer needs, available alternatives, channel conditions, and the firm’s ability to serve the market profitably.
 
-## Analytical roles
+## Five analytical questions
 
-| Analytical role | Coding question | Illustrative content |
+Each retained article contributed evidence to at least one of five questions.
+
+| Analytical question | Coding focus | Illustrative distinctions |
 |---|---|---|
-| Local market context | What geographically bounded market setting does the study examine? | Neighborhoods, trade areas, commercial districts, stores, service locations, shopping centers, or other local-market units. |
-| Consumer mobility | What observed form of movement, visitation, proximity, or flow does the study examine? | Foot traffic, store entry, visits, revisits, browsing, customer flows, GPS traces, point-of-interest visits, proximity, catchments, or trade areas. |
-| Market exposure | How can observed movement create potential contact with a focal offering? | Access to stores, services, promotions, offerings, commercial districts, channels, or place-based information. |
-| Localized market opportunity | What evidence informs the assessment of whether a focal offering can satisfy buyer need profitably in a defined local market? | Buyer need, offering relevance, accessibility, commercial fit, price, assortment, or conditions relevant to commercial viability. |
-| Local sales | What observed sales outcome does the study examine? | Purchases, spending, sales, revenue, or transaction-based outcomes associated with a focal offering or firm in a defined local market and period. |
-| Conversion | What behavioral margins help explain whether potential contact is reflected in local sales? | Purchase likelihood, spending per visit, transaction incidence, offer response, or other behavioral margins relevant to local sales. |
-| Local conversion conditions | What place-based conditions may qualify potential contact, commercial viability, or the relationship between market exposure and local sales? | Access and spatial configuration; offering and local information; competition and channel structure; environment and policy. |
+| **1. Who was observed?** | The consumer population or behavioral stage represented by the mobility measure. | Passersby, pedestrians, store entrants, visitors, repeat visitors, shoppers, buyers, customers, riders, or aggregated device activity. |
+| **2. Why did consumers move?** | The process, condition, or event associated with the observed movement. | Accessibility, distance, transportation, promotion, advertising, product search, store format, weather, competition, mobility restrictions, or other changes in the market setting. |
+| **3. Which commercial outcome was measured?** | The behavioral or organizational result connected with mobility. | Store entry, purchase incidence, visit frequency, transaction frequency, basket composition, spending, sales, revenue, profit, or another commercial outcome. |
+| **4. Which firms, channels, and places were included?** | The organizational and geographic coverage of the evidence. | Focal firms, competitors, physical or digital channels, stores, shopping centers, commercial districts, trade areas, municipalities, or broader markets. |
+| **5. What can the research design establish?** | The relationship supported by the method and observation period. | Description, association, prediction, response to a specific action, change over time, causal effect when identified by the original design, or persistence after market participants adjust. |
 
-## Evidence and measurement dimensions
+These questions were considered together because a conclusion about mobility and local sales depends on the population counted, the outcome recorded, the part of the market represented, the period observed, and the inferential capacity of the research design.
 
-| Dimension | Coding question | Illustrative content |
-|---|---|---|
-| Construct | What theoretical element does the study address? | Mobility, exposure, opportunity, conversion, local sales, or local conversion conditions. |
-| Operationalization | How is that element measured or represented? | Visits, entries, dwell time, customer flows, transactions, spending, sales, digital information, accessibility, or competition. |
-| Data source | What type of record provides the evidence? | Location traces, sensors, Wi-Fi, point-of-sale records, payment-card transactions, surveys, digital-platform records, administrative data, or spatial data. |
-| Spatial unit | At what geographic level is the evidence interpreted? | Individual establishment, service location, street segment, neighborhood, census tract, trade area, commercial district, or municipality. |
-| Outcome role | What does the study treat as the focal observed result? | Visit, purchase, spending, sales, transaction, revenue, or another component of the commercial relationship. |
-| Inferential boundary | What can the evidence establish on its own? | Observed movement, potential contact, a sales association, a place-based condition, or a causal effect when supported by the original design. |
+## Coded evidence
+
+For each eligible article, the review recorded the bibliographic information and the evidence needed to answer the five analytical questions.
+
+| Coding dimension | Information recorded |
+|---|---|
+| Study identification | Authors, year, article title, journal, and publication information. |
+| Observed population | The consumers, visitors, shoppers, buyers, devices, firms, or aggregate flows represented in the study. |
+| Mobility evidence | The form of movement or presence examined and the way it was operationalized. |
+| Movement-generating process | The market, spatial, environmental, informational, or policy condition associated with the observed movement. |
+| Commercial outcome | The purchase, spending, sales, revenue, profit, or other behavioral or organizational outcome examined. |
+| Data sources | Location traces, sensors, Wi-Fi records, transactions, point-of-sale data, payment-card records, surveys, administrative records, digital-platform data, or spatial data. |
+| Geographic support | The establishment, street, shopping center, census tract, trade area, commercial district, city, region, or other spatial unit used in the analysis. |
+| Temporal support | The observation period and whether the design captured a single interval, repeated periods, an intervention window, or longer-term adjustment. |
+| Market coverage | The firms, competitors, channels, categories, places, and alternatives included within the study boundary. |
+| Research design | Observational, predictive, experimental, quasi-experimental, longitudinal, survey-based, qualitative, formal modeling, or another design used by the study. |
+| Main findings | The relationship reported between mobility, consumer behavior, and the commercial outcome within the study’s empirical setting. |
+| Inferential boundary | What remained unobserved or could not be concluded from the population, measures, market coverage, period, and design. |
+| Role in the synthesis | The part of the review argument to which the study contributed. |
 
 ## Coding discipline
 
-- Consumer mobility was not coded as demand, purchase intention, or local sales unless the study directly measured those constructs.
-- Market exposure was coded as potential contact with a focal offering, not as purchase or realized sales.
-- Localized market opportunity was treated as an assessment of commercial viability, not as an observed intermediate outcome.
-- Visits, transactions, spending, and sales were coded according to the specific role they played in each study rather than as interchangeable indicators of market success.
-- Local conversion conditions were coded as explanatory features that may qualify the mobility–sales relationship, not as outcomes equivalent to local sales.
-- Evidence from different data sources was compared only after preserving its spatial unit, temporal support, and inferential boundary.
-- Causal language was retained only when supported by the design of the original study.
+- Consumer mobility was coded according to the population and behavioral stage actually observed rather than interpreted as demand, purchasing, or sales.
+- Traffic, footfall, entry, visits, revisits, proximity, and flows were retained as distinct operationalizations when they represented different forms of movement.
+- Purchases, spending, sales, revenue, and profit were coded according to the firm, offering, channel, place, and period to which the outcome was attributed.
+- A result for one firm, store, or channel was not interpreted as growth in the broader local market unless the study observed the relevant competitors, channels, or market-wide outcome.
+- Predictive evidence was distinguished from evidence about the effect of a specific action, while both were distinguished from evidence that a result persisted after consumers, firms, or competitors adjusted.
+- Geographic and temporal support was preserved when comparing evidence because relationships observed at different spatial units or over different periods do not necessarily represent the same phenomenon.
+- Causal language was retained only when supported by the identification strategy of the original study.
 - Adjacent studies were retained only when their conceptual, empirical, or methodological contribution transferred substantively to the review question.
+- Localized market opportunity was not coded as an observed outcome unless a study separately examined the buyer need, alternatives, channel conditions, and profitable service requirements involved in that assessment.
 
-## Primary synthesis domains
+## Public included-study matrix
 
-The included-study matrix organizes articles into the following domains. These domains facilitate comparison across the corpus; they do not replace the analytical distinctions above.
+The public included-study matrix reports five fields:
+
+1. `Study`
+2. `Article Title`
+3. `Journal`
+4. `Main Evidence Represented`
+5. `Role in the Synthesis`
+
+### Main evidence represented
+
+The `Main Evidence Represented` field uses six descriptive domains to identify the primary setting or evidence represented by each article:
 
 1. Retail traffic, visits, and store conversion.
 2. Local consumption and spending flows.
@@ -69,3 +99,24 @@ The included-study matrix organizes articles into the following domains. These d
 4. Location-based marketing and digital conversion.
 5. Services, hospitality, and non-retail local markets.
 6. General mobility-market theory and methods.
+
+These domains organize the corpus but do not imply that all studies within a domain observe the same consumers, outcomes, market boundaries, or relationships.
+
+### Role in the synthesis
+
+The `Role in the Synthesis` field identifies one or more analytical contributions made by each article:
+
+- Mobility measurement and visitation evidence.
+- Mobility traces linked to market outcomes.
+- Location-based marketing linked to offline behavior.
+- Spatial access and observed mobility.
+- Commercial districts and place-based markets.
+- Local consumption and spending flows.
+- Local conditions shaping mobility and commercial outcomes.
+- Transferable mobility-market theory or methods.
+
+These roles are not mutually exclusive. An article may contribute to several parts of the synthesis when it provides evidence about more than one component of the review question.
+
+## Interpretive outcome
+
+The coding framework supports a direct comparison of what each study establishes and where its conclusion stops. Evidence that consumers reached a place does not establish that they entered or purchased, while sales recorded by a focal organization do not establish that the broader local market expanded. By preserving these distinctions, the synthesis shows why conclusions about consumer mobility and local sales change with the people observed, the commercial result, the market boundary, the period, and the study design.
