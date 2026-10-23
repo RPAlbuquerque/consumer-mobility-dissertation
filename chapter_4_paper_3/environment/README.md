@@ -1,17 +1,18 @@
-# Python Environment
+# Public notebook notes
 
-The notebook was prepared for a Python 3.11 environment with the packages listed in `requirements.txt`. The version ranges preserve the principal APIs used by the workflow without claiming bit-for-bit reproduction across every operating system and geospatial-library build.
+`consumer_mobility_market_access.ipynb` is the repository-facing copy of the analytical notebook used for Chapter 4.
 
-From the `chapter_4_paper_3` directory, create and activate an isolated environment before installing the requirements:
+The public copy preserves the analytical sequence, parameters, diagnostics, and figure-generating procedures while making the following repository-specific changes:
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r environment/requirements.txt
-jupyter lab notebooks/consumer_mobility_market_access.ipynb
-```
+- notebook outputs, execution counts, and environment-specific metadata were cleared;
+- restricted provider links and hosted-data shortcuts were removed;
+- private input locations were replaced with the project-relative paths documented in `../data/README.md`;
+- the terminology was aligned with the final chapter, including local market access, the Mobility-based Market Access Index (MMAI), and exploratory mobility-based access regimes;
+- legacy computational fields such as `mii`, `mii_norm`, and `infrastructure_regime` were retained only where required for compatibility with the analysis-ready input and existing code;
+- challenge-submission framing was removed apart from the bounded recognition statement retained in the chapter documentation;
+- the VIIRS comparison was aligned with the final 120,000-tract held-out specification reported in the dissertation; and
+- the São Paulo procedure was described as aggregate-preserving spatial downscaling through a dasymetric-inspired conditional allocation because the MMAI is a dimensionless composite rather than an extensive quantity such as population, expenditure, or sales.
 
-The notebook does not download empirical inputs automatically. Before execution, authorized users must place the files described in `data/README.md` at the expected project-relative paths.
+No restricted mobility observations, individual trajectories, device histories, credentials, or personally identifiable information are embedded in the notebook. The annual 2024 VIIRS raster must be obtained independently from its official provider.
 
-Geospatial packages may rely on platform-specific binary libraries. Installation through a current Python distribution or environment manager that supplies compatible GDAL, GEOS, and PROJ builds may be preferable on systems where wheels are unavailable.
+No empirical result was recomputed during repository packaging. Full execution remains conditional on authorized access to the restricted tract-level mobility input and local acquisition of the VIIRS raster. These adaptations make the analytical workflow inspectable without implying that the restricted data are openly reproducible or that the 100 m surface contains mobility observed at that resolution.
