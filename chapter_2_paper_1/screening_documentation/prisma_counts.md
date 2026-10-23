@@ -1,21 +1,34 @@
 # PRISMA-Informed Screening Counts
 
-| Stage | Count |
+## Screening flow
+
+| Stage | Records |
 |---|---:|
-| Raw records identified in Scopus | 1,261 |
-| Raw records identified in Web of Science | 574 |
+| Records identified in Scopus before additional filters | 1,261 |
+| Records identified in Web of Science before additional filters | 574 |
 | Records exported from Scopus after database filters | 521 |
 | Records exported from Web of Science after database filters | 290 |
 | Total exported records | 811 |
 | Duplicate records removed | 212 |
 | Unique records screened | 599 |
 | Records excluded after screening | 513 |
-| Studies retained for the integrative synthesis | 86 |
+| Articles retained for the integrative synthesis | 86 |
+
+## Deduplication
+
+The Scopus and Web of Science exports were merged before screening. Deduplication used normalized DOI as the primary key and normalized article title plus publication year as a fallback.
+
+| Deduplication rule | Duplicate records removed |
+|---|---:|
+| Normalized DOI match | 210 |
+| Normalized title and publication-year match | 2 |
+| **Total duplicate records removed** | **212** |
 
 ## Reconciliation checks
 
 - Exported records: `521 + 290 = 811`.
 - Screened records: `811 - 212 = 599`.
-- Final decisions: `86 + 513 = 599`.
+- Final screening decisions: `86 + 513 = 599`.
+- Exclusion codes: `83 + 11 + 346 + 73 = 513`.
 
-The flow is described as PRISMA-informed because PRISMA 2020 was used to document identification, deduplication, screening, and inclusion, while the study combined systematic searching with an integrative theoretical synthesis.
+PRISMA 2020 guided the reporting of identification, deduplication, screening, and inclusion. The study combined this systematic procedure with an integrative comparison of what heterogeneous mobility and local-sales evidence can establish.
