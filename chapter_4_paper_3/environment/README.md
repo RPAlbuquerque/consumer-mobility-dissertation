@@ -10,3 +10,10 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r chapter_4_paper_3/environment/requirements.txt
 jupyter lab
+```
+
+Launch Jupyter from the repository root, the `chapter_4_paper_3` directory, or its `notebooks` directory. The notebook resolves the chapter structure from these locations and uses the project-relative input paths documented in `../data/README.md`.
+
+Complete execution requires independently authorized access to the restricted tract-level mobility GeoPackage and local acquisition of the annual 2024 VIIRS nighttime-light raster. Depending on the operating system and Python distribution, geospatial packages such as GeoPandas, Rasterio, PyProj, and Shapely may also require compatible GDAL and PROJ system libraries.
+
+The public notebook was checked for valid notebook structure, portable paths, cleared outputs, and syntactically valid Python cells, but it was not rerun from the restricted empirical inputs during repository packaging. The dependency ranges provide a compatible public environment rather than an exact lockfile for the original restricted computing environment.
