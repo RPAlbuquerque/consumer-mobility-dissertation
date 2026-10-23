@@ -7,9 +7,9 @@ The public copy preserves the analytical sequence, parameters, diagnostics, and 
 - notebook outputs and execution counts were cleared;
 - restricted provider links and hosted-data shortcuts were removed;
 - input locations were replaced with project-relative paths documented in `data/README.md`;
-- the chapter's final marketing-facing terminology was applied consistently;
+- the chapter’s final marketing-facing terminology was applied consistently;
 - challenge-submission framing was removed, apart from the bounded recognition statement retained in the notebook introduction and chapter README;
 - the held-out VIIRS comparison was aligned with the final 120,000-tract specification reported in the dissertation; and
-- the fine-scale procedure is described as aggregate-preserving allocation because the MII is a dimensionless composite rather than a physical mass.
+- the fine-scale procedure is described as aggregate-preserving spatial downscaling and conditional allocation because the MMAI is a dimensionless composite index whose tract-level values are divided among represented cells rather than mobility observed directly at 100 m.
 
 No restricted data were accessed and no empirical result was recomputed during repository packaging. Full execution remains conditional on authorized access to the tract-level mobility input and local acquisition of the annual 2024 VIIRS raster.
